@@ -19,7 +19,7 @@ var schemas = []string{`CREATE TABLE IF NOT EXISTS {prefix}client (
 	id           varchar(255) BINARY NOT NULL PRIMARY KEY,
 	secret 		 varchar(255) NOT NULL,
 	extra 		 varchar(255) NOT NULL,
-	redirect_uri varchar(255) NOT NULL
+	redirect_uri text NOT NULL
 )`, `CREATE TABLE IF NOT EXISTS {prefix}authorize (
 	client       varchar(255) BINARY NOT NULL,
 	code         varchar(255) BINARY NOT NULL PRIMARY KEY,
